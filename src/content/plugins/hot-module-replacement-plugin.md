@@ -34,3 +34,6 @@ The following options are accepted:
 - `requestTimeout` (number): The timeout used for manifest download (since webpack 3.0.0)
 
 W> These options are experimental and may be deprecated. As mentioned above, they are typically not necessary and including a `new webpack.HotModuleReplacementPlugin()` is enough.
+
+
+W> Note that using `--hot` argument with `webpack-dev-server` automatically adds this, so you do not need to add it to your config file. You will get errors if you have two copies of this plugin configured. 
